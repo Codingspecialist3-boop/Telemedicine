@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 # Create the directory if it doesn't exist
-os.makedirs('/content/app', exist_ok=True)
+#os.makedirs('/content/app', exist_ok=True)
 
 #Loading your saved model. Be sure to change the path if necessary
 # Assuming the model trained on 'Phase' and 'Time Period' is saved as 'linear_regression_model.joblib'
@@ -28,3 +28,4 @@ if st.button('Predict'):
     # Model prediction
     prediction = model.predict(input_features)
     st.write(f'Predicted Value (Telemedicine Usage): {prediction[0]:.2f}')
+
